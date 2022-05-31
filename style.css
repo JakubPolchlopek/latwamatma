@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #808080;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 81.9vh;
+}
+/*header*/
+header{
+    width: 100%;
+    background: #2f4f4f;
+    position: sticky;
+    top: 0;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+header li{
+    text-align: center;
+    list-style-type: none;
+    
+}
+header li:hover{
+    background: #1e3e3e;
+}
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/*przedmioty*/
+.subjects{
+    margin: 30px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, auto);
+}
+
+/*informacje*/
+.news {
+    margin: 0 15px 15px 15px;
+    float: left;
+    border: 3px solid black;
+    text-align: center;
+    width: 50%;
+    background-color: darkgray;
+}
+
+.aboutWebSite {
+    margin: 0 15px 15px 15px;
+    float: right;
+    border: 3px solid black;
+    text-align: center;
+    width: 50%;
+    background-color: darkgray;
+}
+
+/* divy z klasami && divy z działami*/
+.forms, .sections{
+    margin: 30px 0 30px 0;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 30px;
+}
+.form img, .section img, .subject img, .exam img{
+    width: 30vh;
+    height: 30vh;
+}
+
+.form img:hover, .section img:hover, .subject img:hover, .exam img:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    cursor: pointer;
+}
+/*divy z egzaminami */
+.exams{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 30px;
+}
+
+/* stopka strony */
+footer {
+    background: darkslategray;
+    width: 100%;
+    color: white;
+    height: 15vh;
+}
+
+footer ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.footer_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.copyright{
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 50%;
+}
+
+
+/*ikony*/
+.fa-brands{
+    font-size: 1.5em;
+}
+
+/* pozostałe */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#contact{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2{
+    text-align: center;
+    margin: 10px;
+}
+.lekcja {
+    border: 1px black solid;
+    margin: 30px;
+    text-align: center;
+}
+
+.lekcja img{
+    width: 200px;
+}
